@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddFragment">
+
+    <EditText
+        android:id="@+id/foodName"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="#DED7D7"
+        android:gravity="left|top"
+        android:hint="Taom nomi"
+        android:padding="20dp"
+        app:layout_constraintBottom_toTopOf="@id/productWant"
+        app:layout_constraintHeight_percent="0.1"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.05"
+        app:layout_constraintWidth_percent="0.8" />
+
+    <EditText
+        android:id="@+id/productWant"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="#DED7D7"
+        android:gravity="left|top"
+        android:hint="Kerakli mahsulotlar"
+        android:padding="20dp"
+        app:layout_constraintBottom_toTopOf="@id/foodNorm"
+        app:layout_constraintHeight_percent="0.25"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/foodName"
+        app:layout_constraintVertical_bias="0.22"
+        app:layout_constraintWidth_percent="0.8" />
+
+    <EditText
+        android:id="@+id/foodNorm"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="#DED7D7"
+        android:gravity="left|top"
+        android:hint="Taom tayyorlanish tartibi"
+        android:padding="20dp"
+        app:layout_constraintBottom_toTopOf="@id/saveButton"
+        app:layout_constraintHeight_percent="0.4"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/productWant"
+        app:layout_constraintVertical_bias="0.75"
+        app:layout_constraintWidth_percent="0.8" />
+
+    <Button
+        android:id="@+id/saveButton"
+        android:layout_width="150dp"
+        android:layout_height="60dp"
+        android:layout_margin="15dp"
+        android:background="@drawable/button_b"
+        android:text="Saqlash"
+        android:textAllCaps="false"
+        android:textSize="15dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.95"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.98" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
